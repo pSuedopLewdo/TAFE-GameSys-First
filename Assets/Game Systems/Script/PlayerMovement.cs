@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public float crouch = 2.5f;
     public float walk = 5;
     public float run = 10;
+    public float superSpeed = 100;
     
     #endregion
     void Start()
@@ -52,6 +53,23 @@ public class PlayerMovement : MonoBehaviour
         }
         moveDir.y -= gravity * Time.deltaTime;
         charC.Move(moveDir * Time.deltaTime);
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = run;
+        }
+        else if (Input.GetKey(KeyCode.LeftCommand))
+        {
+            speed = crouch;
+        }
+        else if (Input.GetKey(KeyCode.K))
+        {
+            speed = superSpeed;
+        }
+        else
+        {
+            speed = walk;
+        }
         #endregion
     }
 }
