@@ -33,13 +33,12 @@ public class MouseLook : MonoBehaviour
 
     [Header("Y Rotation Clamp")]
     //max and min Y rotation
-    public float maxY;
-    public float minY;
+    public Vector2 rotation = new Vector2(-60, 60);
     
     [Space(8)]
     //we will have to invert our mouse position later to calculate our mouse look correctly
     //float for rotation Y
-    public float rotY;
+    public float rotY = 10;
 
     [Header("Mouse")] 
     public bool cursorVisible = false;
@@ -82,7 +81,7 @@ public class MouseLook : MonoBehaviour
         else
         {
             rotY += Input.GetAxis("Mouse Y") * senseY;
-            rotY = Mathf.Clamp(rotY, minY, maxY);
+            rotY = Mathf.Clamp(rotY, rotation.x, rotation.y);
             if(!mouseInvert)
             {
                 transform.localEulerAngles = new Vector3(-rotY, 0, 0);
