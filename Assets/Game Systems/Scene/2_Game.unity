@@ -220,7 +220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92234121}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 0, y: 25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 119583266}
   - component: {fileID: 119583269}
   - component: {fileID: 119583270}
+  - component: {fileID: 119583271}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -389,6 +390,18 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   mainCam: {fileID: 1328952690}
   canvas: {fileID: 1315524353}
+--- !u!114 &119583271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119583265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dbdadf7694b6441da6599a38890237c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &135040457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,6 +1800,7 @@ GameObject:
   - component: {fileID: 1570168651}
   - component: {fileID: 1570168652}
   - component: {fileID: 1570168653}
+  - component: {fileID: 1570168654}
   m_Layer: 0
   m_Name: Foustus
   m_TagString: Player
@@ -1968,6 +1982,18 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 0
+--- !u!114 &1570168654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570168644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f060c37642b4f9884582671ccf314d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1738396644
 GameObject:
   m_ObjectHideFlags: 0
